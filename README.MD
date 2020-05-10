@@ -4,7 +4,7 @@
 
 [Azure Functions](https://azure.microsoft.com/en-in/services/functions/) Serverless Compute is a platform that allows you to run functions that are triggered by events. Event Source can be anything like  Http Endpoint, Message Queue, etc... There are many events supported by Azure Functions.
 
-Microsoft provides many tools and libraries to make the development of functions that run in Azure convenient and easy. Microsoft has contributed the Azure Functions Runtime to the open-source community. Azure Functions Runtime/Host is a set of libraries for Azure WebJobs SDK. Azure WebJobs SDK is a framework to write background processing jobs that run on Azure. Azure WebJobs SDK provides system to declare Triggers and Bindings. 
+Microsoft provides many tools and libraries to make the development of functions that run in Azure convenient and easy. Microsoft has contributed the [Azure Functions Runtime](https://github.com/Azure/azure-functions-host) to the open-source community. Azure Functions Runtime/Host is a set of libraries for Azure WebJobs SDK. Azure WebJobs SDK is a framework to write background processing jobs that run on Azure. Azure WebJobs SDK provides system to declare Triggers and Bindings. 
 
 A Trigger invokes a function. Using WebJobs SDK provides a machanism to declare triggers. In most of the cases a Trigger is associated with data. This data is passed to the function as a paramter. The WebJobs SDK provide many build-in triggers. The SDK also gives us the framework to define custom triggers. A functon should have exactly one trigger.
 
