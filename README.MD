@@ -146,7 +146,7 @@ To test our function, we need a program to send messages to the RabbitMQ queue _
     var queuename = args[0]
     var temperature = args[1]
     
-    amqp.connect('amqp://krvarma:var753ma@ubuntuserver').then(function(conn) {
+    amqp.connect('amqp://<username>:<password>@host:port').then(function(conn) {
       return conn.createChannel().then(function(ch) {
         var msg = 'Hello World, from RabbitMQ';
     
@@ -175,7 +175,7 @@ To test our function, we need a program to send messages to the RabbitMQ queue _
     var args = process.argv.slice(2)
     var queuename = args[0]
     
-    var open = require('amqplib').connect('amqp://krvarma:var753ma@ubuntuserver');
+    var open = require('amqplib').connect('amqp://<username>:<password>@host:port');
     
     // Consumer
     open.then(function(conn) {
@@ -246,7 +246,7 @@ Notice that our 3 environment variables are not properly included in the Dockerf
     
     ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
     	AzureFunctionsJobHost__Logging__Console__IsEnable=true
-    	RabbitMqConnection="amqp://krvarma:var753ma@192.168.8.21" \
+    	RabbitMqConnection="amqp://<username>:<password>@host:port" \
     	InputQueueName="TemperatureReading" \
     	OutputQueueName="TemperatureNotification"
     	
