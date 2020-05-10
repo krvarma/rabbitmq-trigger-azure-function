@@ -2,7 +2,7 @@
 
 ![Featured Image](https://raw.githubusercontent.com/krvarma/rabbitmq_trigger_azure_function/master/images/featuredimage.png?token=AA46XGZSBQKOH42A2WPNGFK6YF7W2)
 
-Azure Functions Serverless Compute is a platform that allows you to run functions that are triggered by events. Event Source can be anything like  Http Endpoint, Message Queue, etc... There are many events supported by Azure Functions.
+[Azure Functions](https://azure.microsoft.com/en-in/services/functions/) Serverless Compute is a platform that allows you to run functions that are triggered by events. Event Source can be anything like  Http Endpoint, Message Queue, etc... There are many events supported by Azure Functions.
 
 Microsoft provides many tools and libraries to make the development of functions that run in Azure convenient and easy. Microsoft has contributed the Azure Functions Runtime to the open-source community. Azure Functions Runtime/Host is a set of libraries for Azure WebJobs SDK. Azure WebJobs SDK is a framework to write background processing jobs that run on Azure. Azure WebJobs SDK provides system to declare Triggers and Bindings. 
 
@@ -10,7 +10,7 @@ A Trigger invokes a function. Using WebJobs SDK provides a machanism to declare 
 
 Binding is a method to connect other resources to the function. Bindings are optional. A binding can be input or outpu binding. A function receives data from external resources using input bindings. Function send data to external resources using output bindings.
 
-This article describes how to use the open-source RabbitMQ extension provided by Microsoft. Please note that the RabbitMQ Extension is in the Beta stage. Using it in production environment is not recommeded.
+This article describes how to use the open-source RabbitMQ extension provided by Microsoft. Please note that the [RabbitMQ Extension](https://github.com/Azure/azure-functions-rabbitmq-extension) is in the Beta stage. Using it in production environment is not recommeded.
 
 The example we are going to develop is a simple function to receive a JSON payload from a RabbitMQ Queue and conditionally output to another RabbitMQ Queue. The function execution starts when a producer sends JSON payload to a RabbitMQ Queue. In this example, we are considering an IoT scenario where different temperature sensors send temperature reading in a particular interval. An Edge Processing device route this message to a RabbitMQ Queue. The RabbitMQ extension triggers our function when a message is received. Out function checks whether the temperature is below a minimum or above a maximum limit. If it is out or range, then send a message to another queue. Another function process this message. For the sake of simplicity, let's use a simple JSON document like one below.
 
@@ -267,7 +267,3 @@ Now you have an Azure Function using RabbitMQ trigger ready to run on production
 In the next article, we will explore how to run the container on Kubernetes and scale it using KEDA.
 
 Till then, Happy coding! :)
-
-
-
-
