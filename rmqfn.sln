@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rmqfn", "rmqfn\rmqfn.csproj", "{5B291595-D94C-4E67-AD6A-FD23BBE8810C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B291595-D94C-4E67-AD6A-FD23BBE8810C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B291595-D94C-4E67-AD6A-FD23BBE8810C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B291595-D94C-4E67-AD6A-FD23BBE8810C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B291595-D94C-4E67-AD6A-FD23BBE8810C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B20FF584-C0C6-4DC6-83C6-75FEA0A5C244}
+	EndGlobalSection
+EndGlobal
