@@ -201,7 +201,7 @@ To send the message to the queue run the following command in a terminal window:
 
 If everything goes well, you can see the logs from the terminal window that indicates successful running. You also see the message from the output queue if the temperature is below 20.
 
-We have successfully created a function that gets triggered by RabbitMQ. To run that in a production environment we need to package it into Docker container. We can create Dockerfile using the Azure Function Core tools.  
+We have successfully created a function that gets triggered by RabbitMQ. To run that in a production environment we need to package it into Docker container. We can create Dockerfile using the [Azure Function Core tools](https://github.com/Azure/azure-functions-core-tools).  
 
 ## Creating Dockerfile
 
