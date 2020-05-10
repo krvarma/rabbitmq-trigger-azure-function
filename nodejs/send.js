@@ -4,7 +4,7 @@ var args = process.argv.slice(2)
 var queuename = args[0]
 var temperature = args[1]
 
-amqp.connect('amqp://krvarma:var753ma@ubuntuserver').then(function(conn) {
+amqp.connect('amqp://<username>:<password>@host:port').then(function(conn) {
   return conn.createChannel().then(function(ch) {
     var msg = 'Hello World, from RabbitMQ';
 
