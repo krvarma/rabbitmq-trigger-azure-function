@@ -1,5 +1,7 @@
 # RabbitMQ Trigger for Azure Functions
 
+![Featured Image](https://raw.githubusercontent.com/krvarma/rabbitmq_trigger_azure_function/master/images/featuredimage.png?token=AA46XGZSBQKOH42A2WPNGFK6YF7W2)
+
 Azure Functions Serverless Compute is a platform that allows you to run functions that are triggered by events. Event Source can be anything like  Http Endpoint, Message Queue, etc... There are many events supported by Azure Functions.
 
 Microsoft provides many tools and libraries to make the development of functions that run in Azure convenient and easy. Microsoft has contributed the Azure Functions Runtime to the open-source community. Azure Functions Runtime/Host is a set of libraries for Azure WebJobs SDK. Azure WebJobs SDK is a framework to write background processing jobs that run on Azure. Azure WebJobs SDK provides system to declare Triggers and Bindings. 
