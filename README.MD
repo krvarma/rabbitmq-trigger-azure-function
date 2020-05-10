@@ -29,7 +29,11 @@ Next, we need to install the RabbitMQ Extension using the NuGet Package Manager.
 
 This command will install the RabbitMQ extension.
 
+![Create a new project and install extension](https://raw.githubusercontent.com/krvarma/rabbitmq_trigger_azure_function/master/images/new_project.gif?token=AA46XG6UZ3XO3BBI3LK6UDS6YFZAK)
+
 Let's add a new function to the project. To add a new Function, right-click the project and select Add and select New Azure Function from the popup. Since RabbitMQ Extension is not available by default, let's choose HttpTrigger and create a function. We can change the trigger in the next step.  
+
+![Create a new Function](https://raw.githubusercontent.com/krvarma/rabbitmq_trigger_azure_function/master/images/new_fn.gif?token=AA46XG6U4JUCCL6P3DP6IF26YFZGC)
 
 Now we will change the function and add the RabbitMQ Trigger. We will add a binding also to publish notification message. Given below is our new function.
 
@@ -128,6 +132,8 @@ To start the RabbitMQ docker container, run the following command.
     docker-compose up -d
 
 To run the project, click the Run toolbar button or press the hot-key _Ctrl+F5_. If everything goes well you can see the application running and waiting for the event.
+
+![Function started successfully](https://raw.githubusercontent.com/krvarma/rabbitmq_trigger_azure_function/master/images/fnstart.png?token=AA46XGYD4ASC5PRHIRWJAVC6YFZLM)
 
 To test our function, we need a program to send messages to the RabbitMQ queue _TemperatureReading_. I wrote the following two sample applications in Node.js to send and receive messages.
 
@@ -251,6 +257,8 @@ Once the Dockerfile is modified, you can build the image using the following Doc
 This command will build the image and tag it as rmqfn. To run the image run the following command.
 
     docker run rmqfn
+
+![Function running in Docker container](https://raw.githubusercontent.com/krvarma/rabbitmq_trigger_azure_function/master/images/fndocker.png?token=AA46XGY6JGJLDLOPWEPHHBS6YFZOU)
 
 Now you have an Azure Function using RabbitMQ trigger ready to run on production environments.
 
