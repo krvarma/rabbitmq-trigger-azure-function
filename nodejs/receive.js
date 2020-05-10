@@ -1,7 +1,7 @@
 var args = process.argv.slice(2)
 var queuename = args[0]
 
-var open = require('amqplib').connect('amqp://krvarma:var753ma@ubuntuserver');
+var open = require('amqplib').connect('amqp://<username>:<password>@host:port');
 
 // Consumer
 open.then(function(conn) {
