@@ -1,4 +1,4 @@
-# RabbitMQ Trigger for Azure Functions
+# RabbitMQ Extension for Azure Functions
 
 ![Featured Image](https://raw.githubusercontent.com/krvarma/rabbitmq_trigger_azure_function/master/images/featuredimage.png?token=AA46XGZSBQKOH42A2WPNGFK6YF7W2)
 
